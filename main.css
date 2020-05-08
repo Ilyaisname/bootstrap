@@ -3,13 +3,6 @@
   text-align: center;
 }
 
-.header,
-.sidebar,
-.content,
-.sidebar-right,
-.footer {
-  border: 1px solid;
-}
 
 .header {
   margin-top: 30px;
@@ -17,9 +10,9 @@
   padding: 10px;
 }
 
-.sidebar {
+.sidebar-left {
   padding: 25px;
-  background-color: #7b7ddd;
+  background-color: #c7c8fb;
 }
 
 .content {
@@ -35,4 +28,8 @@
 .footer {
   padding: 10px;
   background-color: #fdb461;
+}
+
+.page-nav {
+  padding-top: 1rem;
 }
