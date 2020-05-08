@@ -1,5 +1,4 @@
 * {
-  text-transform: uppercase;
   text-align: center;
 }
 
@@ -32,4 +31,8 @@
 
 .page-nav {
   padding-top: 1rem;
+}
+
+.product {
+  padding-bottom: .7rem;
 }
