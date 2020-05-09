@@ -11,8 +11,88 @@
   
   <div class="container">
     <div class="row">
-      <div class="header col-lg-12 ">header </div>
-    </div>
+      <div class="header col-lg-12 ">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+          Заказать звонок
+        </button>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModal" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Закажите звонок прямо сейчас..</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="container-fluid">
+                  <form class="needs-validation" novalidate>
+                    <div class="form-row justify-content-center">
+                      
+                        <div class="col-5 mb-3">
+                          <input type="text" class="form-control" id="validationCustom01" placeholder="name" required>
+                            <div class="valid-feedback">
+                              good name!
+                            </div>
+                            <div class="invalid-feedback">
+                              bad value!!!
+                            </div>
+                        </div>
+                        <div class="col-5 mb-3">
+                          <input type="number" class="form-control" id="validationCustom02" placeholder="phone" required>
+                            <div class="valid-feedback">
+                              nice phone num!
+                            </div>
+                            <div class="invalid-feedback">
+                              please enter your phone num!
+                            </div>
+                        </div>
+                      
+                      <div class="form-group col-10">
+                        <input type="email" class="form-control" placeholder="email" required>
+                        <div class="valid-feedback">
+                          good email address!
+                        </div>
+                        <div class="invalid-feedback">              
+                          please enter your email
+                        </div>
+                      </div>
+                      
+                      <div class="col-10 mb-3">
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroupPrepend3">Время звонка</span>
+                          </div>
+                          <select class="custom-select" required>
+                            <option value="">Выберите время</option>
+                            <option value="1">10.00-11.00</option>
+                            <option value="2">11.00-12.00</option>
+                            <option value="3">12.00-13.00</option>
+                          </select>
+                          <div class="invalid-feedback">Вы не выбрали время</div>
+                        </div>
+                      </div>
+                      
+                      <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                        <label class="form-check-label" for="invalidCheck">
+                          Согласие на обработку персональных данных
+                        </label>
+                        <div class="invalid-feedback">
+                          поставьте флажок чтобы идти дальше.
+                        </div>
+                      </div>  
+                    </div>
+                    <button class="btn btn-primary" type="submit">Send</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
     <div class="row">
       
       <div class="sidebar-left col-lg-2 order-lg-1 col-md-4 order-sm-2 order-2">
